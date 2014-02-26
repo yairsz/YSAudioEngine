@@ -10,4 +10,6 @@
 
 @interface YSViewController : UIViewController
 
+@property (weak,nonatomic) IBOutlet UIButton * hitButton;
+
 @end

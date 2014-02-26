@@ -7,8 +7,13 @@
 //
 
 #import "YSViewController.h"
+#import "YSIotaSE.h"
 
-@interface YSViewController ()
+@interface YSViewController (){
+    BOOL playing;
+}
+@property (strong, nonatomic) YSIotaSE *se;
+@property (strong, nonatomic) NSTimer * playTimer;
 
 @end
 
@@ -18,12 +23,26 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.se = [YSIotaSE sharedSE];
+    [self.se prime];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)startHits:(UIButton *)sender {
+    if (playing) { [self.playTimer invalidate]; }
+    else {
+        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(hit) userInfo:nil repeats:YES];
+    }
+    playing = !playing;
+}
+
+- (void) hit {
+    [self.se playHit];
 }
 
 @end

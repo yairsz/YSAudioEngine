@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B023199B18BE9ABB00E2F03C /* A2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198318BE9ABA00E2F03C /* A2_dly_dly.mp3 */; };
+		B023199C18BE9ABB00E2F03C /* A3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198418BE9ABA00E2F03C /* A3_dly_dly.mp3 */; };
+		B023199D18BE9ABB00E2F03C /* A4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198518BE9ABA00E2F03C /* A4_dly_dly.mp3 */; };
+		B023199E18BE9ABB00E2F03C /* B2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198618BE9ABA00E2F03C /* B2_dly_dly.mp3 */; };
+		B023199F18BE9ABB00E2F03C /* B3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198718BE9ABA00E2F03C /* B3_dly_dly.mp3 */; };
+		B02319A018BE9ABB00E2F03C /* B4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198818BE9ABA00E2F03C /* B4_dly_dly.mp3 */; };
+		B02319A118BE9ABB00E2F03C /* C2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198918BE9ABA00E2F03C /* C2_dly_dly.mp3 */; };
+		B02319A218BE9ABB00E2F03C /* C3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198A18BE9ABA00E2F03C /* C3_dly_dly.mp3 */; };
+		B02319A318BE9ABB00E2F03C /* C4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198B18BE9ABA00E2F03C /* C4_dly_dly.mp3 */; };
+		B02319A418BE9ABB00E2F03C /* C5_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198C18BE9ABA00E2F03C /* C5_dly_dly.mp3 */; };
+		B02319A518BE9ABB00E2F03C /* D2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198D18BE9ABA00E2F03C /* D2_dly_dly.mp3 */; };
+		B02319A618BE9ABB00E2F03C /* D3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198E18BE9ABA00E2F03C /* D3_dly_dly.mp3 */; };
+		B02319A718BE9ABB00E2F03C /* D4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023198F18BE9ABB00E2F03C /* D4_dly_dly.mp3 */; };
+		B02319A818BE9ABB00E2F03C /* D5_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199018BE9ABB00E2F03C /* D5_dly_dly.mp3 */; };
+		B02319A918BE9ABB00E2F03C /* E2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199118BE9ABB00E2F03C /* E2_dly_dly.mp3 */; };
+		B02319AA18BE9ABB00E2F03C /* E3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199218BE9ABB00E2F03C /* E3_dly_dly.mp3 */; };
+		B02319AB18BE9ABB00E2F03C /* E4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199318BE9ABB00E2F03C /* E4_dly_dly.mp3 */; };
+		B02319AC18BE9ABB00E2F03C /* E5_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199418BE9ABB00E2F03C /* E5_dly_dly.mp3 */; };
+		B02319AD18BE9ABB00E2F03C /* F2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199518BE9ABB00E2F03C /* F2_dly_dly.mp3 */; };
+		B02319AE18BE9ABB00E2F03C /* F3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199618BE9ABB00E2F03C /* F3_dly_dly.mp3 */; };
+		B02319AF18BE9ABB00E2F03C /* F4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199718BE9ABB00E2F03C /* F4_dly_dly.mp3 */; };
+		B02319B018BE9ABB00E2F03C /* G2_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199818BE9ABB00E2F03C /* G2_dly_dly.mp3 */; };
+		B02319B118BE9ABB00E2F03C /* G3_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199918BE9ABB00E2F03C /* G3_dly_dly.mp3 */; };
+		B02319B218BE9ABB00E2F03C /* G4_dly_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B023199A18BE9ABB00E2F03C /* G4_dly_dly.mp3 */; };
 		B07CA28518BE5F5300304116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28418BE5F5300304116 /* Foundation.framework */; };
 		B07CA28718BE5F5300304116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28618BE5F5300304116 /* CoreGraphics.framework */; };
 		B07CA28918BE5F5300304116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28818BE5F5300304116 /* UIKit.framework */; };
@@ -22,6 +46,8 @@
 		B07CA2A918BE5F5300304116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28818BE5F5300304116 /* UIKit.framework */; };
 		B07CA2B118BE5F5300304116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B07CA2AF18BE5F5300304116 /* InfoPlist.strings */; };
 		B07CA2B318BE5F5300304116 /* YSAudioEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */; };
+		B07CA2BE18BE5F7000304116 /* YSIotaSE.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA2BD18BE5F7000304116 /* YSIotaSE.m */; };
+		B07CA2C018BE5F7C00304116 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA2BF18BE5F7C00304116 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +61,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B023198318BE9ABA00E2F03C /* A2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198418BE9ABA00E2F03C /* A3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198518BE9ABA00E2F03C /* A4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198618BE9ABA00E2F03C /* B2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198718BE9ABA00E2F03C /* B3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198818BE9ABA00E2F03C /* B4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198918BE9ABA00E2F03C /* C2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198A18BE9ABA00E2F03C /* C3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198B18BE9ABA00E2F03C /* C4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198C18BE9ABA00E2F03C /* C5_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C5_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198D18BE9ABA00E2F03C /* D2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198E18BE9ABA00E2F03C /* D3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023198F18BE9ABB00E2F03C /* D4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199018BE9ABB00E2F03C /* D5_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D5_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199118BE9ABB00E2F03C /* E2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199218BE9ABB00E2F03C /* E3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199318BE9ABB00E2F03C /* E4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199418BE9ABB00E2F03C /* E5_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E5_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199518BE9ABB00E2F03C /* F2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199618BE9ABB00E2F03C /* F3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199718BE9ABB00E2F03C /* F4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = F4_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199818BE9ABB00E2F03C /* G2_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G2_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199918BE9ABB00E2F03C /* G3_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G3_dly_dly.mp3; sourceTree = "<group>"; };
+		B023199A18BE9ABB00E2F03C /* G4_dly_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G4_dly_dly.mp3; sourceTree = "<group>"; };
 		B07CA28118BE5F5300304116 /* YSAudioEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSAudioEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07CA28418BE5F5300304116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B07CA28618BE5F5300304116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +105,9 @@
 		B07CA2AE18BE5F5300304116 /* YSAudioEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSAudioEngineTests-Info.plist"; sourceTree = "<group>"; };
 		B07CA2B018BE5F5300304116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAudioEngineTests.m; sourceTree = "<group>"; };
+		B07CA2BC18BE5F7000304116 /* YSIotaSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSIotaSE.h; path = ../YSIotaSE.h; sourceTree = "<group>"; };
+		B07CA2BD18BE5F7000304116 /* YSIotaSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSIotaSE.m; path = ../YSIotaSE.m; sourceTree = "<group>"; };
+		B07CA2BF18BE5F7C00304116 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07CA2C018BE5F7C00304116 /* AVFoundation.framework in Frameworks */,
 				B07CA28718BE5F5300304116 /* CoreGraphics.framework in Frameworks */,
 				B07CA28918BE5F5300304116 /* UIKit.framework in Frameworks */,
 				B07CA28518BE5F5300304116 /* Foundation.framework in Frameworks */,
@@ -81,6 +135,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B023198218BE9ABA00E2F03C /* IotaNotesDly */ = {
+			isa = PBXGroup;
+			children = (
+				B023198318BE9ABA00E2F03C /* A2_dly_dly.mp3 */,
+				B023198418BE9ABA00E2F03C /* A3_dly_dly.mp3 */,
+				B023198518BE9ABA00E2F03C /* A4_dly_dly.mp3 */,
+				B023198618BE9ABA00E2F03C /* B2_dly_dly.mp3 */,
+				B023198718BE9ABA00E2F03C /* B3_dly_dly.mp3 */,
+				B023198818BE9ABA00E2F03C /* B4_dly_dly.mp3 */,
+				B023198918BE9ABA00E2F03C /* C2_dly_dly.mp3 */,
+				B023198A18BE9ABA00E2F03C /* C3_dly_dly.mp3 */,
+				B023198B18BE9ABA00E2F03C /* C4_dly_dly.mp3 */,
+				B023198C18BE9ABA00E2F03C /* C5_dly_dly.mp3 */,
+				B023198D18BE9ABA00E2F03C /* D2_dly_dly.mp3 */,
+				B023198E18BE9ABA00E2F03C /* D3_dly_dly.mp3 */,
+				B023198F18BE9ABB00E2F03C /* D4_dly_dly.mp3 */,
+				B023199018BE9ABB00E2F03C /* D5_dly_dly.mp3 */,
+				B023199118BE9ABB00E2F03C /* E2_dly_dly.mp3 */,
+				B023199218BE9ABB00E2F03C /* E3_dly_dly.mp3 */,
+				B023199318BE9ABB00E2F03C /* E4_dly_dly.mp3 */,
+				B023199418BE9ABB00E2F03C /* E5_dly_dly.mp3 */,
+				B023199518BE9ABB00E2F03C /* F2_dly_dly.mp3 */,
+				B023199618BE9ABB00E2F03C /* F3_dly_dly.mp3 */,
+				B023199718BE9ABB00E2F03C /* F4_dly_dly.mp3 */,
+				B023199818BE9ABB00E2F03C /* G2_dly_dly.mp3 */,
+				B023199918BE9ABB00E2F03C /* G3_dly_dly.mp3 */,
+				B023199A18BE9ABB00E2F03C /* G4_dly_dly.mp3 */,
+			);
+			path = IotaNotesDly;
+			sourceTree = "<group>";
+		};
 		B07CA27818BE5F5300304116 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +188,7 @@
 		B07CA28318BE5F5300304116 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B07CA2BF18BE5F7C00304116 /* AVFoundation.framework */,
 				B07CA28418BE5F5300304116 /* Foundation.framework */,
 				B07CA28618BE5F5300304116 /* CoreGraphics.framework */,
 				B07CA28818BE5F5300304116 /* UIKit.framework */,
@@ -114,6 +200,8 @@
 		B07CA28A18BE5F5300304116 /* YSAudioEngine */ = {
 			isa = PBXGroup;
 			children = (
+				B07CA2BC18BE5F7000304116 /* YSIotaSE.h */,
+				B07CA2BD18BE5F7000304116 /* YSIotaSE.m */,
 				B07CA29318BE5F5300304116 /* YSAppDelegate.h */,
 				B07CA29418BE5F5300304116 /* YSAppDelegate.m */,
 				B07CA29618BE5F5300304116 /* Main_iPhone.storyboard */,
@@ -129,6 +217,7 @@
 		B07CA28B18BE5F5300304116 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B023198218BE9ABA00E2F03C /* IotaNotesDly */,
 				B07CA28C18BE5F5300304116 /* YSAudioEngine-Info.plist */,
 				B07CA28D18BE5F5300304116 /* InfoPlist.strings */,
 				B07CA29018BE5F5300304116 /* main.m */,
@@ -232,10 +321,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B023199E18BE9ABB00E2F03C /* B2_dly_dly.mp3 in Resources */,
 				B07CA29B18BE5F5300304116 /* Main_iPad.storyboard in Resources */,
+				B02319A018BE9ABB00E2F03C /* B4_dly_dly.mp3 in Resources */,
+				B02319B018BE9ABB00E2F03C /* G2_dly_dly.mp3 in Resources */,
+				B02319A618BE9ABB00E2F03C /* D3_dly_dly.mp3 in Resources */,
+				B02319A318BE9ABB00E2F03C /* C4_dly_dly.mp3 in Resources */,
 				B07CA2A018BE5F5300304116 /* Images.xcassets in Resources */,
+				B02319AF18BE9ABB00E2F03C /* F4_dly_dly.mp3 in Resources */,
+				B02319AC18BE9ABB00E2F03C /* E5_dly_dly.mp3 in Resources */,
+				B023199C18BE9ABB00E2F03C /* A3_dly_dly.mp3 in Resources */,
+				B02319A418BE9ABB00E2F03C /* C5_dly_dly.mp3 in Resources */,
+				B02319A118BE9ABB00E2F03C /* C2_dly_dly.mp3 in Resources */,
 				B07CA29818BE5F5300304116 /* Main_iPhone.storyboard in Resources */,
+				B02319AD18BE9ABB00E2F03C /* F2_dly_dly.mp3 in Resources */,
+				B02319A718BE9ABB00E2F03C /* D4_dly_dly.mp3 in Resources */,
+				B02319B118BE9ABB00E2F03C /* G3_dly_dly.mp3 in Resources */,
+				B02319A818BE9ABB00E2F03C /* D5_dly_dly.mp3 in Resources */,
+				B02319AA18BE9ABB00E2F03C /* E3_dly_dly.mp3 in Resources */,
+				B023199F18BE9ABB00E2F03C /* B3_dly_dly.mp3 in Resources */,
+				B023199B18BE9ABB00E2F03C /* A2_dly_dly.mp3 in Resources */,
 				B07CA28F18BE5F5300304116 /* InfoPlist.strings in Resources */,
+				B02319AB18BE9ABB00E2F03C /* E4_dly_dly.mp3 in Resources */,
+				B02319A918BE9ABB00E2F03C /* E2_dly_dly.mp3 in Resources */,
+				B02319B218BE9ABB00E2F03C /* G4_dly_dly.mp3 in Resources */,
+				B02319A218BE9ABB00E2F03C /* C3_dly_dly.mp3 in Resources */,
+				B02319AE18BE9ABB00E2F03C /* F3_dly_dly.mp3 in Resources */,
+				B02319A518BE9ABB00E2F03C /* D2_dly_dly.mp3 in Resources */,
+				B023199D18BE9ABB00E2F03C /* A4_dly_dly.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07CA2BE18BE5F7000304116 /* YSIotaSE.m in Sources */,
 				B07CA29E18BE5F5300304116 /* YSViewController.m in Sources */,
 				B07CA29518BE5F5300304116 /* YSAppDelegate.m in Sources */,
 				B07CA29118BE5F5300304116 /* main.m in Sources */,
@@ -475,6 +589,7 @@
 				B07CA2B818BE5F5300304116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B07CA2B918BE5F5300304116 /* Build configuration list for PBXNativeTarget "YSAudioEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +598,7 @@
 				B07CA2BB18BE5F5300304116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

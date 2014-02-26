@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B07CA28518BE5F5300304116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28418BE5F5300304116 /* Foundation.framework */; };
+		B07CA28718BE5F5300304116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28618BE5F5300304116 /* CoreGraphics.framework */; };
+		B07CA28918BE5F5300304116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28818BE5F5300304116 /* UIKit.framework */; };
+		B07CA28F18BE5F5300304116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B07CA28D18BE5F5300304116 /* InfoPlist.strings */; };
+		B07CA29118BE5F5300304116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA29018BE5F5300304116 /* main.m */; };
+		B07CA29518BE5F5300304116 /* YSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA29418BE5F5300304116 /* YSAppDelegate.m */; };
+		B07CA29818BE5F5300304116 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07CA29618BE5F5300304116 /* Main_iPhone.storyboard */; };
+		B07CA29B18BE5F5300304116 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07CA29918BE5F5300304116 /* Main_iPad.storyboard */; };
+		B07CA29E18BE5F5300304116 /* YSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA29D18BE5F5300304116 /* YSViewController.m */; };
+		B07CA2A018BE5F5300304116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07CA29F18BE5F5300304116 /* Images.xcassets */; };
+		B07CA2A718BE5F5300304116 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA2A618BE5F5300304116 /* XCTest.framework */; };
+		B07CA2A818BE5F5300304116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28418BE5F5300304116 /* Foundation.framework */; };
+		B07CA2A918BE5F5300304116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28818BE5F5300304116 /* UIKit.framework */; };
+		B07CA2B118BE5F5300304116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B07CA2AF18BE5F5300304116 /* InfoPlist.strings */; };
+		B07CA2B318BE5F5300304116 /* YSAudioEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B07CA2AA18BE5F5300304116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07CA27918BE5F5300304116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07CA28018BE5F5300304116;
+			remoteInfo = YSAudioEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B07CA28118BE5F5300304116 /* YSAudioEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSAudioEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07CA28418BE5F5300304116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B07CA28618BE5F5300304116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B07CA28818BE5F5300304116 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B07CA28C18BE5F5300304116 /* YSAudioEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSAudioEngine-Info.plist"; sourceTree = "<group>"; };
+		B07CA28E18BE5F5300304116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B07CA29018BE5F5300304116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B07CA29218BE5F5300304116 /* YSAudioEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSAudioEngine-Prefix.pch"; sourceTree = "<group>"; };
+		B07CA29318BE5F5300304116 /* YSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSAppDelegate.h; sourceTree = "<group>"; };
+		B07CA29418BE5F5300304116 /* YSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAppDelegate.m; sourceTree = "<group>"; };
+		B07CA29718BE5F5300304116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B07CA29A18BE5F5300304116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B07CA29C18BE5F5300304116 /* YSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSViewController.h; sourceTree = "<group>"; };
+		B07CA29D18BE5F5300304116 /* YSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSViewController.m; sourceTree = "<group>"; };
+		B07CA29F18BE5F5300304116 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B07CA2A518BE5F5300304116 /* YSAudioEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSAudioEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07CA2A618BE5F5300304116 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B07CA2AE18BE5F5300304116 /* YSAudioEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSAudioEngineTests-Info.plist"; sourceTree = "<group>"; };
+		B07CA2B018BE5F5300304116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAudioEngineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B07CA27E18BE5F5300304116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA28718BE5F5300304116 /* CoreGraphics.framework in Frameworks */,
+				B07CA28918BE5F5300304116 /* UIKit.framework in Frameworks */,
+				B07CA28518BE5F5300304116 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CA2A218BE5F5300304116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA2A718BE5F5300304116 /* XCTest.framework in Frameworks */,
+				B07CA2A918BE5F5300304116 /* UIKit.framework in Frameworks */,
+				B07CA2A818BE5F5300304116 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B07CA27818BE5F5300304116 = {
+			isa = PBXGroup;
+			children = (
+				B07CA28A18BE5F5300304116 /* YSAudioEngine */,
+				B07CA2AC18BE5F5300304116 /* YSAudioEngineTests */,
+				B07CA28318BE5F5300304116 /* Frameworks */,
+				B07CA28218BE5F5300304116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B07CA28218BE5F5300304116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA28118BE5F5300304116 /* YSAudioEngine.app */,
+				B07CA2A518BE5F5300304116 /* YSAudioEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B07CA28318BE5F5300304116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA28418BE5F5300304116 /* Foundation.framework */,
+				B07CA28618BE5F5300304116 /* CoreGraphics.framework */,
+				B07CA28818BE5F5300304116 /* UIKit.framework */,
+				B07CA2A618BE5F5300304116 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07CA28A18BE5F5300304116 /* YSAudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA29318BE5F5300304116 /* YSAppDelegate.h */,
+				B07CA29418BE5F5300304116 /* YSAppDelegate.m */,
+				B07CA29618BE5F5300304116 /* Main_iPhone.storyboard */,
+				B07CA29918BE5F5300304116 /* Main_iPad.storyboard */,
+				B07CA29C18BE5F5300304116 /* YSViewController.h */,
+				B07CA29D18BE5F5300304116 /* YSViewController.m */,
+				B07CA29F18BE5F5300304116 /* Images.xcassets */,
+				B07CA28B18BE5F5300304116 /* Supporting Files */,
+			);
+			path = YSAudioEngine;
+			sourceTree = "<group>";
+		};
+		B07CA28B18BE5F5300304116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA28C18BE5F5300304116 /* YSAudioEngine-Info.plist */,
+				B07CA28D18BE5F5300304116 /* InfoPlist.strings */,
+				B07CA29018BE5F5300304116 /* main.m */,
+				B07CA29218BE5F5300304116 /* YSAudioEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07CA2AC18BE5F5300304116 /* YSAudioEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */,
+				B07CA2AD18BE5F5300304116 /* Supporting Files */,
+			);
+			path = YSAudioEngineTests;
+			sourceTree = "<group>";
+		};
+		B07CA2AD18BE5F5300304116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07CA2AE18BE5F5300304116 /* YSAudioEngineTests-Info.plist */,
+				B07CA2AF18BE5F5300304116 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B07CA28018BE5F5300304116 /* YSAudioEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07CA2B618BE5F5300304116 /* Build configuration list for PBXNativeTarget "YSAudioEngine" */;
+			buildPhases = (
+				B07CA27D18BE5F5300304116 /* Sources */,
+				B07CA27E18BE5F5300304116 /* Frameworks */,
+				B07CA27F18BE5F5300304116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSAudioEngine;
+			productName = YSAudioEngine;
+			productReference = B07CA28118BE5F5300304116 /* YSAudioEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B07CA2A418BE5F5300304116 /* YSAudioEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07CA2B918BE5F5300304116 /* Build configuration list for PBXNativeTarget "YSAudioEngineTests" */;
+			buildPhases = (
+				B07CA2A118BE5F5300304116 /* Sources */,
+				B07CA2A218BE5F5300304116 /* Frameworks */,
+				B07CA2A318BE5F5300304116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B07CA2AB18BE5F5300304116 /* PBXTargetDependency */,
+			);
+			name = YSAudioEngineTests;
+			productName = YSAudioEngineTests;
+			productReference = B07CA2A518BE5F5300304116 /* YSAudioEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B07CA27918BE5F5300304116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "The 2 Handed Consortium";
+				TargetAttributes = {
+					B07CA2A418BE5F5300304116 = {
+						TestTargetID = B07CA28018BE5F5300304116;
+					};
+				};
+			};
+			buildConfigurationList = B07CA27C18BE5F5300304116 /* Build configuration list for PBXProject "YSAudioEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B07CA27818BE5F5300304116;
+			productRefGroup = B07CA28218BE5F5300304116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B07CA28018BE5F5300304116 /* YSAudioEngine */,
+				B07CA2A418BE5F5300304116 /* YSAudioEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B07CA27F18BE5F5300304116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA29B18BE5F5300304116 /* Main_iPad.storyboard in Resources */,
+				B07CA2A018BE5F5300304116 /* Images.xcassets in Resources */,
+				B07CA29818BE5F5300304116 /* Main_iPhone.storyboard in Resources */,
+				B07CA28F18BE5F5300304116 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CA2A318BE5F5300304116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA2B118BE5F5300304116 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B07CA27D18BE5F5300304116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA29E18BE5F5300304116 /* YSViewController.m in Sources */,
+				B07CA29518BE5F5300304116 /* YSAppDelegate.m in Sources */,
+				B07CA29118BE5F5300304116 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CA2A118BE5F5300304116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07CA2B318BE5F5300304116 /* YSAudioEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B07CA2AB18BE5F5300304116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B07CA28018BE5F5300304116 /* YSAudioEngine */;
+			targetProxy = B07CA2AA18BE5F5300304116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B07CA28D18BE5F5300304116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CA28E18BE5F5300304116 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B07CA29618BE5F5300304116 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CA29718BE5F5300304116 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B07CA29918BE5F5300304116 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CA29A18BE5F5300304116 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B07CA2AF18BE5F5300304116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CA2B018BE5F5300304116 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B07CA2B418BE5F5300304116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B07CA2B518BE5F5300304116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B07CA2B718BE5F5300304116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSAudioEngine/YSAudioEngine-Prefix.pch";
+				INFOPLIST_FILE = "YSAudioEngine/YSAudioEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B07CA2B818BE5F5300304116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSAudioEngine/YSAudioEngine-Prefix.pch";
+				INFOPLIST_FILE = "YSAudioEngine/YSAudioEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B07CA2BA18BE5F5300304116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSAudioEngine.app/YSAudioEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSAudioEngine/YSAudioEngine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YSAudioEngineTests/YSAudioEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B07CA2BB18BE5F5300304116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSAudioEngine.app/YSAudioEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSAudioEngine/YSAudioEngine-Prefix.pch";
+				INFOPLIST_FILE = "YSAudioEngineTests/YSAudioEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B07CA27C18BE5F5300304116 /* Build configuration list for PBXProject "YSAudioEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CA2B418BE5F5300304116 /* Debug */,
+				B07CA2B518BE5F5300304116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07CA2B618BE5F5300304116 /* Build configuration list for PBXNativeTarget "YSAudioEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CA2B718BE5F5300304116 /* Debug */,
+				B07CA2B818BE5F5300304116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B07CA2B918BE5F5300304116 /* Build configuration list for PBXNativeTarget "YSAudioEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CA2BA18BE5F5300304116 /* Debug */,
+				B07CA2BB18BE5F5300304116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B07CA27918BE5F5300304116 /* Project object */;
+}

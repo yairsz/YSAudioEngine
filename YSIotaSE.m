@@ -7,16 +7,20 @@
 //
 
 #import "YSIotaSE.h"
+//
+//#define TRIADS @[@[@"C",@"E", @"G"],@[@"D",@"F", @"A"],\
+//                 @[@"E",@"G", @"B"],@[@"F",@"A", @"C"],\
+//                 @[@"G",@"B", @"D"],@[@"A",@"C",@"E"],\
+//                 @[@"B",@"D",@"F"]]
+#define MAJOR @[@[@"C",@"D",@"E",@"F",@"G",@"A",@"B"]]
 
-#define TRIADS @[@[@"C",@"E", @"G"],@[@"D",@"F", @"A"],\
-                 @[@"E",@"G", @"B"],@[@"F",@"A", @"C"],\
-                 @[@"G",@"B", @"D"],@[@"A",@"C",@"E"]]
 
 @interface YSIotaSE ()
 
 @property (strong, nonatomic) NSMutableDictionary * players;
 @property (nonatomic) NSInteger playCount;
 @property (nonatomic) NSMutableArray * notes;
+@property (nonatomic) NSInteger index;
 
 @end
 
@@ -35,15 +39,21 @@
 - (void) prime
 {
     [self loadPlayers];
-    
+}
+
+- (void) reset
+{
+    self.index = 0;
 }
 
 - (void) playHit
 {
-    AVAudioPlayer * player = [self.players objectForKey:[self.notes lastObject]];
+    NSLog(@"%@", self.notes[self.index]);
+    AVAudioPlayer * player = [self.players objectForKey:self.notes[self.index]];
     [player setVolume:1.0];
     [player play];
-    [self.notes removeLastObject];
+    self.index ++;
+    if (self.index == self.notes.count) self.index -= 7;
     
 }
 
@@ -61,18 +71,19 @@
         _notes = [NSMutableArray new];
     }
     if (_notes.count == 0) {
-        NSArray * triads = TRIADS;
-        [_notes addObjectsFromArray:triads[arc4random() % triads.count]];
-        [_notes addObjectsFromArray:triads[arc4random() % triads.count]];
-        [_notes addObjectsFromArray:triads[arc4random() % triads.count]];
-        
+        NSArray * baseScale = MAJOR;
+        for (int i = 0; i < 5; i++ ) {
+            [_notes addObjectsFromArray:baseScale[i % baseScale.count]];
+        }
         for (int i = 0; i < _notes.count; i++ ) {
             NSString * note = _notes[i];
-            _notes[i] = [NSString stringWithFormat:@"%@%d",note,((arc4random() % 3) +2 )];
+            _notes[i] = [NSString stringWithFormat:@"%@%d",note, (int) (i / 7) + 2];
         }
     }
     return _notes;
 }
+
+
 
 - (void) loadPlayers
 {
@@ -85,8 +96,10 @@
             NSString * noteName = [[fileName componentsSeparatedByString:@"_"] firstObject];
             NSURL * fileURL = [NSURL URLWithString:fileName relativeToURL:bundleURL];
             AVAudioPlayer * player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+            
             [self primePlayer:player];
             [self.players setValue:player forKey:noteName];
+            NSLog(@"%@",fileName);
         }
     }
 }

@@ -15,5 +15,6 @@
 
 - (void) prime;
 - (void) playHit;
+- (void) reset;
 
 @end

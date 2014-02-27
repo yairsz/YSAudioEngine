@@ -34,9 +34,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startHits:(UIButton *)sender {
-    if (playing) { [self.playTimer invalidate]; }
+    if (playing) {
+        [self.playTimer invalidate];
+        [self.se reset];
+    }
     else {
-        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(hit) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(hit) userInfo:nil repeats:YES];
     }
     playing = !playing;
 }

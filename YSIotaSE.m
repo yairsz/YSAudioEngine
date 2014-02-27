@@ -32,6 +32,13 @@
     
     dispatch_once(&pred, ^{
         shared = [[YSIotaSE alloc] init];
+        // Handle AudioSession
+ 
+        if ([[AVAudioSession sharedInstance] isOtherAudioPlaying]) {
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+        } else {
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+        }
     });
     return shared;
 }
@@ -48,7 +55,6 @@
 
 - (void) playHit
 {
-    NSLog(@"%@", self.notes[self.index]);
     AVAudioPlayer * player = [self.players objectForKey:self.notes[self.index]];
     [player setVolume:1.0];
     [player play];
@@ -99,7 +105,6 @@
             
             [self primePlayer:player];
             [self.players setValue:player forKey:noteName];
-            NSLog(@"%@",fileName);
         }
     }
 }

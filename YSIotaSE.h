@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+typedef enum YSIotaSEEvent {
+    YSIotaSEEventLoose = 0,
+    YSIotaSEEvent25,
+    YSIotaSEEvent50,
+    YSIotaSEEvent100,
+} YSIotaSEEvent;
 
 @interface YSIotaSE : NSObject
 
@@ -16,5 +22,6 @@
 - (void) prime;
 - (void) playHit;
 - (void) reset;
+- (void) playEvent: (YSIotaSEEvent) event;
 
 @end

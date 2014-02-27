@@ -11,6 +11,7 @@
 
 @interface YSViewController (){
     BOOL playing;
+    int counter;
 }
 @property (strong, nonatomic) YSIotaSE *se;
 @property (strong, nonatomic) NSTimer * playTimer;
@@ -34,14 +35,39 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startHits:(UIButton *)sender {
-    if (playing) {
-        [self.playTimer invalidate];
-        [self.se reset];
+//    if (playing) {
+//        [self.playTimer invalidate];
+//        [self.se reset];
+//    }
+//    else {
+//        [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(hit) userInfo:nil repeats:YES];
+//    }
+//    playing = !playing;
+    switch (counter % 4) {
+        case 0:
+            [self.se playEvent:YSIotaSEEvent50];
+            break;
+        case 1:
+            [self.se playEvent:YSIotaSEEvent100];
+            break;
+        case 2:
+            [self.se playEvent:YSIotaSEEvent25];
+            break;
+        case 3:
+            [self.se playEvent:YSIotaSEEventLoose];
+            break;
+            
+        default:
+            break;
     }
-    else {
-        [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(hit) userInfo:nil repeats:YES];
-    }
-    playing = !playing;
+    
+    counter++;
+    
+    
+    
+    
+    
+    
 }
 
 - (void) hit {

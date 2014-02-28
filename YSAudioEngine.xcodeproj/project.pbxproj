@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0525CCA18C04AA700FE292B /* StartGame_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0525CC918C04AA700FE292B /* StartGame_.mp3 */; };
 		B07CA28518BE5F5300304116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28418BE5F5300304116 /* Foundation.framework */; };
 		B07CA28718BE5F5300304116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28618BE5F5300304116 /* CoreGraphics.framework */; };
 		B07CA28918BE5F5300304116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA28818BE5F5300304116 /* UIKit.framework */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0525CC918C04AA700FE292B /* StartGame_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartGame_.mp3; sourceTree = "<group>"; };
 		B07CA28118BE5F5300304116 /* YSAudioEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSAudioEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07CA28418BE5F5300304116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B07CA28618BE5F5300304116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -253,6 +255,7 @@
 		B099E77418C0158E002E5F82 /* EventSounds_dly */ = {
 			isa = PBXGroup;
 			children = (
+				B0525CC918C04AA700FE292B /* StartGame_.mp3 */,
 				B099E77F18C01660002E5F82 /* Loose_.mp3 */,
 				B099E77518C0158E002E5F82 /* 100Points__dly.mp3 */,
 				B099E77618C0158E002E5F82 /* 25Points__dly.mp3 */,
@@ -418,6 +421,7 @@
 				B09DEFE918BFC83A00AA1901 /* C7_dly.mp3 in Resources */,
 				B09DEFEC18BFC83A00AA1901 /* D4_dly.mp3 in Resources */,
 				B09DEFDC18BFC83A00AA1901 /* A4_dly.mp3 in Resources */,
+				B0525CCA18C04AA700FE292B /* StartGame_.mp3 in Resources */,
 				B099E77C18C0158E002E5F82 /* 50Points__dly.mp3 in Resources */,
 				B09DEFE118BFC83A00AA1901 /* B4_dly.mp3 in Resources */,
 				B09DEFE018BFC83A00AA1901 /* B3_dly.mp3 in Resources */,

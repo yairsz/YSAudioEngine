@@ -8,7 +8,7 @@
 
 #import "YSIotaSE.h"
 
-#define MAJOR      @[@[@"C",@"D",@"E",@"F",@"G",@"A",@"B"]]
+#define MAJOR @[@[@"C",@"D",@"E",@"F",@"G",@"A",@"B"]]
 
 @interface YSIotaSE ()
 
@@ -104,6 +104,9 @@
             break;
         case YSIotaSEEventPowerUp:
             eventKey = @"PowerUp";
+            break;
+        case YSIotaSEEventStartGame:
+            eventKey = @"StartGame";
             break;
         default:
             break;

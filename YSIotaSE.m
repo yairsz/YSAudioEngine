@@ -19,6 +19,7 @@
 #define POINTS_100 @[@"C5",@"D5",@"E5",@"F5",@"G5",@"A5",@"B5",@"C6"]
 #define POINTS_50 @[@"C4",@"E4",@"G4",@"C4"]
 #define POINTS_25 @[@"C3",@"C4"]
+#define POINTS_5 @[@"C2",@"C3"]
 #define LOOSE @[@"C3",@"G2",@"D2",@"C2"]
 
 #define INTERVAL 0.07
@@ -102,6 +103,9 @@
     NSArray * notesArray;
     switch (event) {
         case YSIotaSEEventLoose:
+            notesArray = LOOSE;
+            break;
+        case YSIotaSEEvent5:
             notesArray = LOOSE;
             break;
         case YSIotaSEEvent25:

@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 typedef enum YSIotaSEEvent {
     YSIotaSEEventLoose = 0,
+    YSIotaSEEvent5,
     YSIotaSEEvent25,
     YSIotaSEEvent50,
     YSIotaSEEvent100,

@@ -8,22 +8,7 @@
 
 #import "YSIotaSE.h"
 
-
-//
-//#define TRIADS @[@[@"C",@"E", @"G"],@[@"D",@"F", @"A"],\
-//                 @[@"E",@"G", @"B"],@[@"F",@"A", @"C"],\
-//                 @[@"G",@"B", @"D"],@[@"A",@"C",@"E"],\
-//                 @[@"B",@"D",@"F"]]
-
-#define MAJOR @[@[@"C",@"D",@"E",@"F",@"G",@"A",@"B"]]
-#define POINTS_100 @[@"C5",@"D5",@"E5",@"F5",@"G5",@"A5",@"B5",@"C6"]
-#define POINTS_50 @[@"C4",@"E4",@"G4",@"C4"]
-#define POINTS_25 @[@"C3",@"C4"]
-#define POINTS_5 @[@"C2",@"C3"]
-#define LOOSE @[@"C3",@"G2",@"D2",@"C2"]
-
-#define INTERVAL 0.07
-
+#define MAJOR      @[@[@"C",@"D",@"E",@"F",@"G",@"A",@"B"]]
 
 @interface YSIotaSE ()
 
@@ -100,44 +85,38 @@
 }
 
 - (void) playEvent:(YSIotaSEEvent) event {
-    NSArray * notesArray;
+    NSString * eventKey;
     switch (event) {
         case YSIotaSEEventLoose:
-            notesArray = LOOSE;
+            eventKey = @"Loose";
             break;
         case YSIotaSEEvent5:
-            notesArray = LOOSE;
+            eventKey = @"5Points";
             break;
         case YSIotaSEEvent25:
-            notesArray = POINTS_25;
+            eventKey = @"25Points";
             break;
         case YSIotaSEEvent50:
-            notesArray = POINTS_50;
+            eventKey = @"50Points";
             break;
         case YSIotaSEEvent100:
-            notesArray = POINTS_100;
+            eventKey = @"100Points";
+            break;
+        case YSIotaSEEventPowerUp:
+            eventKey = @"PowerUp";
             break;
         default:
             break;
     }
-    
-        for (NSInteger i = 0; i< notesArray.count; i++) {
-            AVPlayer * notePlayer = [self.players objectForKey:notesArray[i]];
-            SEL theSelector = @selector(playPLayer:);
-            NSMethodSignature * signature = [YSIotaSE instanceMethodSignatureForSelector:theSelector];
-            NSInvocation * invocation = [NSInvocation invocationWithMethodSignature:signature];
-            [invocation setSelector:@selector(playPLayer:)];
-            [invocation setSelector:theSelector];
-            [invocation setTarget:self];
-            [invocation setArgument:&notePlayer atIndex:2];
-            [NSTimer scheduledTimerWithTimeInterval:INTERVAL*i invocation:invocation repeats:NO];
-        }
+
+    AVPlayer * player = [self.players objectForKey:eventKey];
+    [player setVolume:1.0];
+    [player play];
 }
 
 - (void) playPLayer: (AVAudioPlayer*) player
 {
-    [player setVolume:1.0];
-    [player play];
+    
 }
 
 - (void) loadPlayers

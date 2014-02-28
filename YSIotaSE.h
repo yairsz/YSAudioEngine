@@ -14,6 +14,7 @@ typedef enum YSIotaSEEvent {
     YSIotaSEEvent25,
     YSIotaSEEvent50,
     YSIotaSEEvent100,
+    YSIotaSEEventPowerUp
 } YSIotaSEEvent;
 
 @interface YSIotaSE : NSObject

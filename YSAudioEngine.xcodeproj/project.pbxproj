@@ -24,6 +24,12 @@
 		B07CA2B318BE5F5300304116 /* YSAudioEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA2B218BE5F5300304116 /* YSAudioEngineTests.m */; };
 		B07CA2BE18BE5F7000304116 /* YSIotaSE.m in Sources */ = {isa = PBXBuildFile; fileRef = B07CA2BD18BE5F7000304116 /* YSIotaSE.m */; };
 		B07CA2C018BE5F7C00304116 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07CA2BF18BE5F7C00304116 /* AVFoundation.framework */; };
+		B099E77A18C0158E002E5F82 /* 100Points__dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77518C0158E002E5F82 /* 100Points__dly.mp3 */; };
+		B099E77B18C0158E002E5F82 /* 25Points__dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77618C0158E002E5F82 /* 25Points__dly.mp3 */; };
+		B099E77C18C0158E002E5F82 /* 50Points__dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77718C0158E002E5F82 /* 50Points__dly.mp3 */; };
+		B099E77D18C0158E002E5F82 /* 5Points__dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77818C0158E002E5F82 /* 5Points__dly.mp3 */; };
+		B099E77E18C0158E002E5F82 /* PowerUp_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77918C0158E002E5F82 /* PowerUp_dly.mp3 */; };
+		B099E78018C01660002E5F82 /* Loose_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B099E77F18C01660002E5F82 /* Loose_.mp3 */; };
 		B09DEFDA18BFC83A00AA1901 /* A2_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09DEFB618BFC83A00AA1901 /* A2_dly.mp3 */; };
 		B09DEFDB18BFC83A00AA1901 /* A3_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09DEFB718BFC83A00AA1901 /* A3_dly.mp3 */; };
 		B09DEFDC18BFC83A00AA1901 /* A4_dly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09DEFB818BFC83A00AA1901 /* A4_dly.mp3 */; };
@@ -96,6 +102,12 @@
 		B07CA2BC18BE5F7000304116 /* YSIotaSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSIotaSE.h; path = ../YSIotaSE.h; sourceTree = "<group>"; };
 		B07CA2BD18BE5F7000304116 /* YSIotaSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSIotaSE.m; path = ../YSIotaSE.m; sourceTree = "<group>"; };
 		B07CA2BF18BE5F7C00304116 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B099E77518C0158E002E5F82 /* 100Points__dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 100Points__dly.mp3; sourceTree = "<group>"; };
+		B099E77618C0158E002E5F82 /* 25Points__dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 25Points__dly.mp3; sourceTree = "<group>"; };
+		B099E77718C0158E002E5F82 /* 50Points__dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 50Points__dly.mp3; sourceTree = "<group>"; };
+		B099E77818C0158E002E5F82 /* 5Points__dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5Points__dly.mp3; sourceTree = "<group>"; };
+		B099E77918C0158E002E5F82 /* PowerUp_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp_dly.mp3; sourceTree = "<group>"; };
+		B099E77F18C01660002E5F82 /* Loose_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Loose_.mp3; sourceTree = "<group>"; };
 		B09DEFB618BFC83A00AA1901 /* A2_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A2_dly.mp3; sourceTree = "<group>"; };
 		B09DEFB718BFC83A00AA1901 /* A3_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A3_dly.mp3; sourceTree = "<group>"; };
 		B09DEFB818BFC83A00AA1901 /* A4_dly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A4_dly.mp3; sourceTree = "<group>"; };
@@ -210,6 +222,7 @@
 		B07CA28B18BE5F5300304116 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B099E77418C0158E002E5F82 /* EventSounds_dly */,
 				B09DEFB518BFC83A00AA1901 /* IotaNotesDly2 */,
 				B07CA28C18BE5F5300304116 /* YSAudioEngine-Info.plist */,
 				B07CA28D18BE5F5300304116 /* InfoPlist.strings */,
@@ -235,6 +248,19 @@
 				B07CA2AF18BE5F5300304116 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B099E77418C0158E002E5F82 /* EventSounds_dly */ = {
+			isa = PBXGroup;
+			children = (
+				B099E77F18C01660002E5F82 /* Loose_.mp3 */,
+				B099E77518C0158E002E5F82 /* 100Points__dly.mp3 */,
+				B099E77618C0158E002E5F82 /* 25Points__dly.mp3 */,
+				B099E77718C0158E002E5F82 /* 50Points__dly.mp3 */,
+				B099E77818C0158E002E5F82 /* 5Points__dly.mp3 */,
+				B099E77918C0158E002E5F82 /* PowerUp_dly.mp3 */,
+			);
+			path = EventSounds_dly;
 			sourceTree = "<group>";
 		};
 		B09DEFB518BFC83A00AA1901 /* IotaNotesDly2 */ = {
@@ -361,6 +387,7 @@
 				B09DEFEA18BFC83A00AA1901 /* D2_dly.mp3 in Resources */,
 				B09DEFDB18BFC83A00AA1901 /* A3_dly.mp3 in Resources */,
 				B09DEFF718BFC83A00AA1901 /* F5_dly.mp3 in Resources */,
+				B099E77E18C0158E002E5F82 /* PowerUp_dly.mp3 in Resources */,
 				B09DEFE618BFC83A00AA1901 /* C4_dly.mp3 in Resources */,
 				B09DEFFD18BFC83A00AA1901 /* G6_dly.mp3 in Resources */,
 				B07CA29B18BE5F5300304116 /* Main_iPad.storyboard in Resources */,
@@ -368,12 +395,16 @@
 				B07CA2A018BE5F5300304116 /* Images.xcassets in Resources */,
 				B07CA29818BE5F5300304116 /* Main_iPhone.storyboard in Resources */,
 				B09DEFF918BFC83A00AA1901 /* G2_dly.mp3 in Resources */,
+				B099E77D18C0158E002E5F82 /* 5Points__dly.mp3 in Resources */,
 				B09DEFE518BFC83A00AA1901 /* C3_dly.mp3 in Resources */,
 				B09DEFF518BFC83A00AA1901 /* F3_dly.mp3 in Resources */,
 				B09DEFF118BFC83A00AA1901 /* E4_dly.mp3 in Resources */,
 				B09DEFFB18BFC83A00AA1901 /* G4_dly.mp3 in Resources */,
 				B09DEFEF18BFC83A00AA1901 /* E2_dly.mp3 in Resources */,
 				B09DEFF318BFC83A00AA1901 /* E6_dly.mp3 in Resources */,
+				B099E77A18C0158E002E5F82 /* 100Points__dly.mp3 in Resources */,
+				B099E77B18C0158E002E5F82 /* 25Points__dly.mp3 in Resources */,
+				B099E78018C01660002E5F82 /* Loose_.mp3 in Resources */,
 				B09DEFF418BFC83A00AA1901 /* F2_dly.mp3 in Resources */,
 				B09DEFFC18BFC83A00AA1901 /* G5_dly.mp3 in Resources */,
 				B09DEFED18BFC83A00AA1901 /* D5_dly.mp3 in Resources */,
@@ -387,6 +418,7 @@
 				B09DEFE918BFC83A00AA1901 /* C7_dly.mp3 in Resources */,
 				B09DEFEC18BFC83A00AA1901 /* D4_dly.mp3 in Resources */,
 				B09DEFDC18BFC83A00AA1901 /* A4_dly.mp3 in Resources */,
+				B099E77C18C0158E002E5F82 /* 50Points__dly.mp3 in Resources */,
 				B09DEFE118BFC83A00AA1901 /* B4_dly.mp3 in Resources */,
 				B09DEFE018BFC83A00AA1901 /* B3_dly.mp3 in Resources */,
 				B09DEFDE18BFC83A00AA1901 /* A6_dly.mp3 in Resources */,

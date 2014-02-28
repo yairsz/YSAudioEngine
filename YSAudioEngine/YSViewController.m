@@ -26,6 +26,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.se = [YSIotaSE sharedSE];
     [self.se prime];
+    counter = 0;
     
 }
 
@@ -43,18 +44,24 @@
 //        [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(hit) userInfo:nil repeats:YES];
 //    }
 //    playing = !playing;
-    switch (counter % 4) {
+    switch (counter % 6) {
         case 0:
-            [self.se playEvent:YSIotaSEEvent50];
+            [self.se playEvent:YSIotaSEEvent100];
             break;
         case 1:
-            [self.se playEvent:YSIotaSEEvent100];
+            [self.se playEvent:YSIotaSEEvent50];
             break;
         case 2:
             [self.se playEvent:YSIotaSEEvent25];
             break;
         case 3:
+            [self.se playEvent:YSIotaSEEvent5];
+            break;
+        case 4:
             [self.se playEvent:YSIotaSEEventLoose];
+            break;
+        case 5:
+            [self.se playEvent:YSIotaSEEventPowerUp];
             break;
             
         default:

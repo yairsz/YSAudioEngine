@@ -7,13 +7,13 @@
 //
 
 #import "YSViewController.h"
-#import "YSIotaSE.h"
+#import "YSShadowBoxerSE.h"
 
 @interface YSViewController (){
     BOOL playing;
     int counter;
 }
-@property (strong, nonatomic) YSIotaSE *se;
+@property (strong, nonatomic) YSShadowBoxerSE *se;
 @property (strong, nonatomic) NSTimer * playTimer;
 
 @end
@@ -24,10 +24,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.se = [YSIotaSE sharedSE];
+    self.se = [YSShadowBoxerSE sharedSE];
     [self.se prime];
-    counter = 0;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,41 +42,48 @@
 //        [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(hit) userInfo:nil repeats:YES];
 //    }
 //    playing = !playing;
-    switch (counter % 6) {
+    
+    
+    
+    switch (arc4random() % 2) {
+
         case 0:
-            [self.se playEvent:YSIotaSEEvent100];
+            [self.se playEvent:YSEventPunchGlove];
             break;
         case 1:
-            [self.se playEvent:YSIotaSEEvent50];
+            [self.se playEvent:YSEventPunchFace];
             break;
-        case 2:
-            [self.se playEvent:YSIotaSEEvent25];
-            break;
-        case 3:
-            [self.se playEvent:YSIotaSEEvent5];
-            break;
-        case 4:
-            [self.se playEvent:YSIotaSEEventLoose];
-            break;
-        case 5:
-            [self.se playEvent:YSIotaSEEventPowerUp];
-            break;
-            
         default:
             break;
     }
     
-    counter++;
-    
-    
-    
-    
-    
-    
+}
+- (IBAction) bell:(id)sender{
+    [self.se playEvent:YSEventBell];
+    [self.se startCrowd];
 }
 
-- (void) hit {
-    [self.se playHit];
+- (IBAction) startCrowd:(id)sender{
+    [self.se startCrowd];
+}
+
+- (IBAction) stopCrowd:(id)sender{
+    [self.se stopCrowd];
+}
+
+- (IBAction) startMusic:(id)sender{
+    [self.se startMusic];
+}
+
+- (IBAction) stopMusic:(id)sender{
+    [self.se stopMusic];
+}
+- (IBAction) crowd1:(id)sender{
+    [self.se playEvent:YSEventCrowd1];
+}- (IBAction) crowd2:(id)sender{
+    [self.se playEvent:YSEventCrowd2];
+}- (IBAction) crowd3:(id)sender{
+    [self.se playEvent:YSEventCrowd3];
 }
 
 @end

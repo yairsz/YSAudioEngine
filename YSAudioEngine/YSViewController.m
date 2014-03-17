@@ -80,10 +80,16 @@
 }
 - (IBAction) crowd1:(id)sender{
     [self.se playEvent:YSEventCrowd1];
-}- (IBAction) crowd2:(id)sender{
+}
+- (IBAction) crowd2:(id)sender{
     [self.se playEvent:YSEventCrowd2];
-}- (IBAction) crowd3:(id)sender{
+}
+- (IBAction) crowd3:(id)sender{
     [self.se playEvent:YSEventCrowd3];
+}
+
+- (IBAction)stopAll:(id)sender{
+    [self.se stopAll];
 }
 
 @end

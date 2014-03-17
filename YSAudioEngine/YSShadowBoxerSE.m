@@ -205,4 +205,11 @@
     
 }
 
+- (void) stopAll
+{
+    for (AVAudioPlayer * player in [self.players allValues]) {
+        [player stop];
+    }
+}
+
 @end

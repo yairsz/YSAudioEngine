@@ -34,4 +34,6 @@ typedef enum YSEvent {
 
 - (void) stopCrowd;
 
+- (void) stopAll;
+
 @end

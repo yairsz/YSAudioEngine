@@ -146,13 +146,9 @@
 }
 
 - (void) stopMusic {
-    [self.soundOperationQueue addOperationWithBlock:^{
         AVAudioPlayer *player = [self.players valueForKey:@"Music.mp3"];
-        while (player.volume > 0.0) {
-            player.volume = player.volume - 0.0000001;
-        }
-        [player stop];
-    }];
+        [self fadeVolumeDown:player];
+
 }
 
 - (void) startCrowd {
@@ -164,13 +160,18 @@
 
 
 - (void) stopCrowd {
-    [self.soundOperationQueue addOperationWithBlock:^{
         AVAudioPlayer *player = [self.players valueForKey:@"LoopCrowd.mp3"];
-        while (player.volume > 0.0) {
-            player.volume = player.volume - 0.0000001;
-        }
-        [player stop];
-    }];
+        [self fadeVolumeDown:player];
+}
+
+- (void)fadeVolumeDown:(AVAudioPlayer *)aPlayer
+{
+    aPlayer.volume = aPlayer.volume - 0.01;
+    if (aPlayer.volume < 0.01) {
+        [aPlayer stop];
+    } else {
+        [self performSelector:@selector(fadeVolumeDown:) withObject:aPlayer afterDelay:0.05];
+    }
 }
 
 - (void) cheerLevel:(int) level

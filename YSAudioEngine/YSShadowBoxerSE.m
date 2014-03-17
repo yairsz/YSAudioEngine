@@ -70,7 +70,7 @@
 
 - (void) playEvent:(YSEvent) event {
     NSString * eventKey;
-    int rand = 1r;
+    int rand = 1;
     
     while (rand == previousNumber) {
         rand = arc4random() % 5 + 1;
@@ -102,8 +102,6 @@
             break;
     }
     
-    
-    NSLog(@"%@",eventKey);
     AVPlayer * player = [self.players objectForKey:eventKey];
     [player setVolume:1.0];
     [player play];

@@ -70,7 +70,7 @@
 
 - (void) playEvent:(YSEvent) event {
     NSString * eventKey;
-    int rand;
+    int rand = 1r;
     
     while (rand == previousNumber) {
         rand = arc4random() % 5 + 1;

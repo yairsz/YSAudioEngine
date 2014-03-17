@@ -180,12 +180,12 @@
         AVAudioPlayer * cheer = [self.players valueForKey:cheerKey];
         cheer.volume = 0.4;
         [cheer play];
-    }else if (level == 2) {
+    }else if (level == 3) {
         AVAudioPlayer * crowd = [self.players valueForKey:@"CrowdHeyHeyHey.mp3"];
-        crowd.volume = 0.6;
+        crowd.volume = 1.8;
         [crowd play];
-        AVAudioPlayer * crowd2 = [self.players valueForKey:@"Crowdheeeey.mp3"];
-        crowd2.volume = 0.4;
+        AVAudioPlayer * crowd2 = [self.players valueForKey:@"Crowdheeey.mp3"];
+        crowd2.volume = 2.0;
         [crowd2 play];
         int rand = arc4random() % 5 +1;
         NSString * cheerKey = [NSString stringWithFormat:@"Cheer%d.mp3",rand];

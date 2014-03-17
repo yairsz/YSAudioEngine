@@ -9,6 +9,9 @@
 #import "YSShadowBoxerSE.h"
 
 @interface YSShadowBoxerSE ()
+{
+    int previousNumber;
+}
 
 @property (strong, nonatomic) NSMutableDictionary * players;
 @property (nonatomic) NSInteger playCount;
@@ -67,7 +70,14 @@
 
 - (void) playEvent:(YSEvent) event {
     NSString * eventKey;
-    int rand = arc4random() % 5 + 1;
+    int rand;
+    
+    while (rand == previousNumber) {
+        rand = arc4random() % 5 + 1;
+    }
+    previousNumber = rand;
+
+    
     switch (event) {
         case YSEventBell:
             eventKey = @"DoubleBell.mp3";
